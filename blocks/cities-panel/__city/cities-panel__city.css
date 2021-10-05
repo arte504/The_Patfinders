@@ -1,0 +1,9 @@
+.cities-panel__city{
+  margin: 0;
+  padding: 36px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}

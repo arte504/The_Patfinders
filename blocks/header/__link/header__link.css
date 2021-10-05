@@ -1,0 +1,11 @@
+.header__link{
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+  padding-right: 50px;
+  letter-spacing: 0.02em;
+}

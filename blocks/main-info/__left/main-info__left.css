@@ -1,0 +1,10 @@
+.main-info__left{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 24%;
+  height: 356px;
+  border: 1px solid red;
+}
