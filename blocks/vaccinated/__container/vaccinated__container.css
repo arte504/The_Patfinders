@@ -1,8 +1,11 @@
-.report{
+.vaccinated__container{
   margin: 0;
   width: 350px;
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background: #FFFFFF;
+  border-radius: 12px;
 }

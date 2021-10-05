@@ -1,0 +1,9 @@
+.vaccinated__box{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 227px;
+  height: 46px;
+  padding-bottom: 20px;
+}

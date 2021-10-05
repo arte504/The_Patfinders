@@ -1,9 +1,11 @@
 .cities-panel{
   margin: 0;
-  width: 30.5%;
+  width: 440px;
+  height: 49px;
   padding: 60px 0 60px 166px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
+  text-align: center;
 }

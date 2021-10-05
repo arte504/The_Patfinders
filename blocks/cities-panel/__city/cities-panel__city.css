@@ -1,8 +1,6 @@
 .cities-panel__city{
   margin: 0;
-  padding: 36px;
-  text-decoration: none;
-  color: inherit;
+  padding: 14.5px 18px 14.5px 18px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;

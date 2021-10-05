@@ -1,115 +1,149 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
-    <title></title>
-    <meta name="author" content="The Pathfinders Team">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
-  </head>
 
-  <body class="page">
-    <header class="header">
-      <div class="header__logo">
-        LOGO
-      </div>
-      <div class="header__right-side">
-        <ul class="header__menu">
-          <li class="">
-            <a href="#" class="header__link header__link_active">Main page</a>
-          </li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title></title>
+  <meta name="author" content="The Pathfinders Team">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
 
-          <li>
-            <a href="#" class="header__link">Test results</a>
-          </li>
+<body class="page">
+  <header class="header">
+    <div class="header__logo">
+      LOGO
+    </div>
+    <div class="header__right-side">
+      <ul class="header__menu">
+        <li class="">
+          <a href="#" class="header__link header__link_active">Main page</a>
+        </li>
 
-          <li>
+        <li>
+          <a href="#" class="header__link">Test results</a>
+        </li>
+
+        <li>
           <a href="#" class="header__link">For travelers</a>
-          </li>
-
-          <li>
-            <a href="#" class="header__link">Healthy diary</a>
-          </li>
-        </ul>
-        <div class="header__user">
-          <a href="#">
-            <img src="./images/user.svg" alt="User image">
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <main class="content">
-      <ul class="cities-panel">
-        <li>
-         <a href="" class="cities-panel__city"> Berlin</a>
         </li>
 
         <li>
-         <a href="" class="cities-panel__city">Moscow</a>
-        </li>
-
-        <li>
-          <a href="" class="cities-panel__city">Jerusalem</a>
-        </li>
-
-        <li>
-         <a href="" class="cities-panel__city">London</a>
+          <a href="#" class="header__link">Healthy diary</a>
         </li>
       </ul>
+      <div class="header__user">
+        <a href="#">
+          <img src="./images/user.svg" alt="User image">
+        </a>
+      </div>
+    </div>
+  </header>
 
-      <container class="main-info">
-        <div class="main-info__left">
-          <div class="tracker">
-            <p>Here will be the tracker!</p>
+  <main class="content">
+    <div class="top-panel">
+      <ul class="cities-panel">
+        <li class="cities-panel__city cities-panel__city_active">
+          <a href="#" class="cities-panel__link">BERLIN</a>
+        </li>
+
+        <li class="cities-panel__city">
+          <a href="#" class="cities-panel__link">Moscow</a>
+        </li>
+
+        <li class="cities-panel__city">
+          <a href="#" class="cities-panel__link">Jerusalem</a>
+        </li>
+
+        <li class="cities-panel__city">
+          <a href="#" class="cities-panel__link">London</a>
+        </li>
+      </ul>
+      <div class="add-city">
+        <img class="add-city__icon" src="./images/add-icon.svg" alt="Add city icon">
+        <p class="add-city__text">Add new city</p>
+      </div>
+    </div>
+
+    <container class="main-info">
+      <div class="main-info__left">
+        <div class="tracker">
+          <p class="tracker__risk tracker__risk_type_low">Low Risk</p>
+          <div class="tracker__box">
+            <img class="tracker__icon" src="" alt="">
+            <p class="tracker__text"></p>
           </div>
-
-          <div class="report">
-            <p>Here will be the report!</p>
+          <div class="tracker__box">
+            <img class="tracker__icon" src="" alt="">
+            <p class="tracker__text"></p>
           </div>
         </div>
 
-        <div class="main-info__right">
-          <div class="map">
-            <p>Here will be the map!</p>
+        <div class="report">
+          <p class="report__title">Report from 04.10.2021</p>
+          <div class="report__box">
+            <p class="report__text">Total cases</p>
+            <p class="report__numbers">207.160 (+24)</p>
           </div>
-        </div>
-      </container>
-
-      <container class="more-info">
-        <div class="vaccinated">
-          <p>Here will be the vaccination graph!</p>
-        </div>
-        
-        <div class="more-news">
-          <p>Here will be "More-news"</p>
-        </div>
-      </container>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__container">
-        <p class="footer__text">Find an appointment for vaccination</p>
-        <div class="footer__links">
-          <a href="https://www.jameda.de/" class="footer__link" target=”_blank”>
-            <img src="./images/link1.svg" alt="Link to Jameda">
-          </a>
-          <a href="https://www.doctolib.fr/" class="footer__link" target=”_blank”>
-            <img src="./images/link2.svg" alt="Link to Doctolib">
-          </a>
-          <a href="https://telegram.org/?setln=en" class="footer__link" target=”_blank”>
-            <img src="./images/link3.svg" alt="Link to Telegram">
-          </a>
+          <div class="report__box">
+            <p class="report__text">Recovered</p>
+            <p class="report__numbers">196.423 (+182)</p>
+          </div>
+          <div class="report__box">
+            <p class="report__text">Deceased</p>
+            <p class="report__numbers">3.628 (0)</p>
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
+
+      <div class="main-info__right">
+        <div class="map">
+          <p>Here will be the map!</p>
+        </div>
+      </div>
+    </container>
+
+    <container class="more-info">
+      <div class="vaccinated">
+        <p class="vaccinated__title">Vaccinated</p>
+        <div class="vaccinated__container">
+          <img class="vaccinated__graph" src="./images/graph.svg" alt="">
+          <div class="vaccinated__box">
+            <img class="vaccinated__color" src="./images/blue.svg" alt="">
+            <p class="vaccinated__text">Get one shot 2.267.651</p>
+          </div>
+          <div class="vaccinated__box">
+            <img class="vaccinated__color" src="./images/yellow.svg" alt="">
+            <p class="vaccinated__text">Fully vaccinated 2.419.596</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-news">
+        <p>Here will be "More-news"</p>
+      </div>
+    </container>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">Find an appointment for vaccination</p>
+      <div class="footer__links">
+        <a href="https://www.jameda.de/" class="footer__link" target=”_blank”>
+          <img src="./images/link1.svg" alt="Link to Jameda">
+        </a>
+        <a href="https://www.doctolib.fr/" class="footer__link" target=”_blank”>
+          <img src="./images/link2.svg" alt="Link to Doctolib">
+        </a>
+        <a href="https://t.me/corona_impftermine_ber" class="footer__link" target=”_blank”>
+          <img src="./images/link3.svg" alt="Link to Telegram bot">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
 
 </html>

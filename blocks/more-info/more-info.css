@@ -4,4 +4,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 1111px;
+  height: auto;
+  padding: 0 164px 0 164px;
 }
