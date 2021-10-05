@@ -1,0 +1,10 @@
+.header__right-side{
+  margin: 0;
+  padding: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: stretch;
+  align-items: flex-start;
+  flex-direction: row;
+}

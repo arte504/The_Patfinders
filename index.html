@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title></title>
+    <meta name="author" content="The Pathfinders Team">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <div class="header__logo">
+        LOGO
+      </div>
+      <div class="header__right-side">
+        <ul class="header__menu">
+          <li class="">
+            <a href="#" class="header__link header__link_active">Main page</a>
+          </li>
+
+          <li>
+            <a href="#" class="header__link">Test results</a>
+          </li>
+
+          <li>
+          <a href="#" class="header__link">For travelers</a>
+          </li>
+
+          <li>
+            <a href="#" class="header__link">Healthy diary</a>
+          </li>
+        </ul>
+        <div class="header__user">
+          <a href="#">
+            <img src="./images/user.svg" alt="User image">
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <ul class="cities-panel">
+        <li>
+         <a href="" class="cities-panel__city"> Berlin</a>
+        </li>
+
+        <li>
+         <a href="" class="cities-panel__city">Moscow</a>
+        </li>
+
+        <li>
+          <a href="" class="cities-panel__city">Jerusalem</a>
+        </li>
+
+        <li>
+         <a href="" class="cities-panel__city">London</a>
+        </li>
+      </ul>
+
+      <container class="main-info">
+        <div class="main-info__left">
+          <div class="tracker">
+            <p>Here will be the tracker!</p>
+          </div>
+
+          <div class="report">
+            <p>Here will be the report!</p>
+          </div>
+        </div>
+
+        <div class="main-info__right">
+          <div class="map">
+            <p>Here will be the map!</p>
+          </div>
+        </div>
+      </container>
+
+      <container class="more-info">
+        <div class="vaccinated">
+          <p>Here will be the vaccination graph!</p>
+        </div>
+        
+        <div class="more-news">
+          <p>Here will be "More-news"</p>
+        </div>
+      </container>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__text">Find an appointment for vaccination</p>
+        <div class="footer__links">
+          <a href="https://www.jameda.de/" class="footer__link" target=”_blank”>
+            <img src="./images/link1.svg" alt="Link to Jameda">
+          </a>
+          <a href="https://www.doctolib.fr/" class="footer__link" target=”_blank”>
+            <img src="./images/link2.svg" alt="Link to Doctolib">
+          </a>
+          <a href="https://telegram.org/?setln=en" class="footer__link" target=”_blank”>
+            <img src="./images/link3.svg" alt="Link to Telegram">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
