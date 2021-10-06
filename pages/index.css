@@ -25,7 +25,12 @@
 @import url(../blocks/main-info/__left/main-info__left.css);
 
 @import url(../blocks/trakcer/tracker.css);
-@import url(../blocks/trakcer/__risk/tracker__risk.css);
+@import url(../blocks/trakcer/__low/tracker__low.css);
+@import url(../blocks/trakcer/__title/tracker__title.css);
+@import url(../blocks/trakcer/__box/tracker__box.css);
+@import url(../blocks/trakcer/__icon/tracker__icon.css);
+@import url(../blocks/trakcer/__divider-line/tracker__divider-line.css);
+@import url(../blocks/trakcer/__text/tracker__text.css);
 
 @import url(../blocks/report/report.css);
 @import url(../blocks/report/__title/report__title.css);
@@ -45,7 +50,18 @@
 @import url(../blocks/vaccinated/__color/vaccinated__color.css);
 @import url(../blocks/vaccinated/__text/vaccinated__text.css);
 
-@import url(../blocks/more-news/more-news.css);
+@import url(../blocks/last-news/last-news.css);
+@import url(../blocks/last-news/__title/last-news__title.css);
+@import url(../blocks/last-news/__container/last-news__container.css);
+@import url(../blocks/last-news/__container-line/last-news__container-line.css);
+@import url(../blocks/last-news/__news-box/last-news__news-box.css);
+@import url(../blocks/last-news/__source/last-news__source.css);
+@import url(../blocks/last-news/__source-image/last-news__source-image.css);
+@import url(../blocks/last-news/__source-title/last-news__source-title.css);
+@import url(../blocks/last-news/__news/last-news__news.css);
+@import url(../blocks/last-news/__news-title/last-news__news-title.css);
+@import url(../blocks/last-news/__news-paragraph/last-news__news-paragraph.css);
+@import url(../blocks/last-news/__publication/last-news__publication.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__container/footer__container.css);

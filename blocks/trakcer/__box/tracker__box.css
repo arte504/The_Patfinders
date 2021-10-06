@@ -1,0 +1,9 @@
+.tracker__box{
+  margin: 0;
+  width: 305px;
+  height: 27px;
+  padding: 12px 25px 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

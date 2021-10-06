@@ -1,0 +1,9 @@
+.last-news__source{
+  margin: 0;
+  width: 255px;
+  height: 21px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-decoration: none;
+}

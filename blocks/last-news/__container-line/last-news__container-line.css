@@ -1,0 +1,9 @@
+.last-news__container-line{
+  margin: 0;
+  width: 692px;
+  height: 156px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+}

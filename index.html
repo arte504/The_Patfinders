@@ -7,12 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
   <title></title>
-  <meta name="author" content="The Pathfinders Team"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-  crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-  crossorigin=""></script>
+  <meta name="author" content="The Pathfinders Team">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 </head>
 
 <body class="page">
@@ -73,15 +70,16 @@
 
     <container class="main-info">
       <div class="main-info__left">
-        <div class="tracker">
-          <p class="tracker__risk tracker__risk_type_low">Low Risk</p>
+        <div class="tracker tracker__low">
+          <p class="tracker__title">Low Risk</p>
           <div class="tracker__box">
-            <img class="tracker__icon" src="" alt="">
-            <p class="tracker__text"></p>
+            <img class="tracker__icon" src="./images/Virus.svg" alt="">
+            <p class="tracker__text">No exposures</p>
           </div>
+          <div class="tracker__divider-line"></div>
           <div class="tracker__box">
-            <img class="tracker__icon" src="" alt="">
-            <p class="tracker__text"></p>
+            <img class="tracker__icon" src="./images/Shield.svg" alt="">
+            <p class="tracker__text">Updated: Today, 14:22</p>
           </div>
         </div>
 
@@ -125,8 +123,66 @@
         </div>
       </div>
 
-      <div class="more-news">
-        <p>Here will be "More-news"</p>
+      <div class="last-news">
+        <p class="last-news__title">Last news</p>
+        <div class="last-news__container">
+          <div class="last-news__container-line">
+            <div class="last-news__news-box">
+              <a href="#" class="last-news__source">
+                <img class="last-news__source-image" src="./images/source.svg" alt="source image">
+                <p class="last-news__source-title">Source</p>
+              </a>
+              <div class="last-news__news">
+                <p class="last-news__news-title">Title</p>
+                <p class="last-news__news-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <p class="last-news__publication">2 hours ago</p>
+            </div>
+            <div class="last-news__news-box">
+              <a href="#" class="last-news__source">
+                <img class="last-news__source-image" src="./images/source.svg" alt="source image">
+                <p class="last-news__source-title">Source</p>
+              </a>
+              <div class="last-news__news">
+                <p class="last-news__news-title">Title</p>
+                <p class="last-news__news-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <p class="last-news__publication">2 hours ago</p>
+            </div>
+          </div>
+          <div class="last-news__container-line">
+            <div class="last-news__news-box">
+              <a href="#" class="last-news__source">
+                <img class="last-news__source-image" src="./images/source.svg" alt="source image">
+                <p class="last-news__source-title">Source</p>
+              </a>
+              <div class="last-news__news">
+                <p class="last-news__news-title">Title</p>
+                <p class="last-news__news-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <p class="last-news__publication">2 hours ago</p>
+            </div>
+            <div class="last-news__news-box">
+              <a href="#" class="last-news__source">
+                <img class="last-news__source-image" src="./images/source.svg" alt="source image">
+                <p class="last-news__source-title">Source</p>
+              </a>
+              <div class="last-news__news">
+                <p class="last-news__news-title">Title</p>
+                <p class="last-news__news-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <p class="last-news__publication">2 hours ago</p>
+            </div>
+          </div>
+        </div>
       </div>
     </container>
   </main>
@@ -141,13 +197,8 @@
         <a href="https://www.doctolib.fr/" class="footer__link" target=”_blank”>
           <img src="./images/link2.svg" alt="Link to Doctolib">
         </a>
-<<<<<<< HEAD
         <a href="https://t.me/corona_impftermine_ber" class="footer__link" target=”_blank”>
           <img src="./images/link3.svg" alt="Link to Telegram bot">
-=======
-        <a href="https://telegram.org/?setln=en" class="footer__link" target=”_blank”>
-          <img src="./images/link3.svg" alt="Link to Telegram">
->>>>>>> eea5844c85041c3db6336fdb3841ce8c90146b81
         </a>
       </div>
     </div>
