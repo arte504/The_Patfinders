@@ -56,12 +56,14 @@
 @import url(../blocks/last-news/__container-line/last-news__container-line.css);
 @import url(../blocks/last-news/__news-box/last-news__news-box.css);
 @import url(../blocks/last-news/__source/last-news__source.css);
+@import url(../blocks/last-news/__source-box/last-news__source-box.css);
 @import url(../blocks/last-news/__source-image/last-news__source-image.css);
 @import url(../blocks/last-news/__source-title/last-news__source-title.css);
 @import url(../blocks/last-news/__news/last-news__news.css);
 @import url(../blocks/last-news/__news-title/last-news__news-title.css);
 @import url(../blocks/last-news/__news-paragraph/last-news__news-paragraph.css);
 @import url(../blocks/last-news/__publication/last-news__publication.css);
+@import url(../blocks/last-news/__read-more/last-news__read-more.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__container/footer__container.css);

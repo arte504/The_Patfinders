@@ -1,0 +1,9 @@
+.last-news__source-box{
+  margin: 0;
+  width: 95px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
