@@ -26,6 +26,24 @@ const cityCoordinates = [
   },
 ];
 
+const moscow = document.querySelector(".cities-panel__link_mscw");
+
+const london = document.querySelector(".cities-panel__link_ldn");
+
+const jerusalem = document.querySelector(".cities-panel__link_js");
+
+const city = document.querySelector(".cities-panel__city");
+
+const changeLocation = () => {
+  mapView.setView([55.751, 37.618], 10);
+};
+
+moscow.addEventListener("click", () => {
+  changeLocation();
+
+  city.classList.toggle("cities-panel__city_active");
+});
+
 // covid-19 stats
 
 const totalCases = document.querySelector(".report__numbers_total");
@@ -75,7 +93,8 @@ function recoverdColor() {
 
 //  News section
 
-const newsTemplate = document.querySelector("#news-template")
+const newsTemplate = document
+  .querySelector("#news-template")
   .content.querySelector(".last-news__news-box");
 
 const apiKey = "6a3a2f477c6343f18ce96d78fc1effc2";
@@ -97,11 +116,17 @@ const getNewsStories = () => {
           const newsCard = newsTemplate.cloneNode(true);
           const newsSource = newsCard.querySelector(".last-news__source-title");
           const newsTitle = newsCard.querySelector(".last-news__news-title");
-          const newsDescription = newsCard.querySelector(".last-news__news-paragraph");
-          const publicationDate = newsCard.querySelector(".last-news__publication");
+          const newsDescription = newsCard.querySelector(
+            ".last-news__news-paragraph"
+          );
+          const publicationDate = newsCard.querySelector(
+            ".last-news__publication"
+          );
           const additonalLink = newsCard.querySelector(".last-news__read-more");
 
           newsTitle.textContent = item.title;
+
+          newsSection.appendChild(newsCard);
 
           return newsCard;
         };
