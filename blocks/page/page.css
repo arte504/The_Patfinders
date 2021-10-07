@@ -1,5 +1,6 @@
 .page {
-  margin: 0;
+  margin: auto 0;
+  width: 100vw;
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

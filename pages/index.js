@@ -41,16 +41,37 @@ const getTotalCases = () => {
     })
     .then((data) => {
       //console.log(data);
-      totalCases.textContent = data.cases;
-      recoveredCases.textContent = data.recovered;
-      deaths.textContent = data.deaths;
+      var cases = data.cases + '' + '(+' + data.todayCases + ')';
+      totalCases.textContent = separator(cases.toString());
+      var recoverd = data.recovered  + '' + '(+' + data.todayRecovered + ')';
+      recoveredCases.textContent = separator(recoverd.toString());
+      var death = data.deaths  + '' + '(+' + data.todayDeaths + ')';
+      deaths.textContent = separator(death.toString());
+      console.log(data);
     })
     .catch((err) => {
       console.log("Error, Request failed");
     });
 };
 
+function separator(numb) {
+  var str = numb.toString().split(".");
+  str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  return str.join(".");
+}
+
 getTotalCases();
+
+function totalColor() {
+  var total = document.getElementById("total");
+  total.classList.toggle('report__color-red'); 
+}
+
+function recoverdColor() {
+  var total = document.getElementById("recoverd");
+  total.classList.toggle('report__color-green'); 
+}
+
 
 //  News section
 

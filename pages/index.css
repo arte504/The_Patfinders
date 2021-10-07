@@ -1,7 +1,8 @@
+/* Global settings */
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
 @import url(../blocks/page/page.css);
-
+/* Header */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__right-side/header__right-side.css);
@@ -10,8 +11,9 @@
 @import url(../blocks/header/__link-text/header__link-text.css);
 @import url(../blocks/header/__link-text/_active/header__link-text_active.css);
 @import url(../blocks/header/__user/header__user.css);
-
+/* Content start */
 @import url(../blocks/content/content.css);
+/* Cities panel */
 @import url(../blocks/top-panel/top-panel.css);
 @import url(../blocks/cities-panel/cities-panel.css);
 @import url(../blocks/cities-panel/__city/cities-panel__city.css);
@@ -21,11 +23,11 @@
 @import url(../blocks/add-city/add-city.css);
 @import url(../blocks/add-city/__text/add-city__text.css);
 @import url(../blocks/add-city/__icon/add-city__icon.css);
-
+/* Top info block diveders */
 @import url(../blocks/main-info/main-info.css);
-
 @import url(../blocks/main-info/__left/main-info__left.css);
-
+@import url(../blocks/main-info/__right/main-info__right.css);
+/* Tracker section */
 @import url(../blocks/trakcer/tracker.css);
 @import url(../blocks/trakcer/__low/tracker__low.css);
 @import url(../blocks/trakcer/__title/tracker__title.css);
@@ -33,16 +35,17 @@
 @import url(../blocks/trakcer/__icon/tracker__icon.css);
 @import url(../blocks/trakcer/__divider-line/tracker__divider-line.css);
 @import url(../blocks/trakcer/__text/tracker__text.css);
-
+/* Report section */
 @import url(../blocks/report/report.css);
 @import url(../blocks/report/__title/report__title.css);
 @import url(../blocks/report/__box/report__box.css);
 @import url(../blocks/report/__text/report__text.css);
 @import url(../blocks/report/__numbers/report__numbers.css);
-
-@import url(../blocks/main-info/__right/main-info__right.css);
+@import url(../blocks/report/__color-red/report__color-red.css);
+@import url(../blocks/report/__color-green/report__color-green.css);
+/* Map section */
 @import url(../blocks/map/map.css);
-
+/* Bootom info block diveders */
 @import url(../blocks/more-info/more-info.css);
 @import url(../blocks/vaccinated/vaccinated.css);
 @import url(../blocks/vaccinated/__title/vaccinated__title.css);
