@@ -13,6 +13,11 @@
   align-items: center;
 }
 
+.certificates__button:hover{
+  border: 1px solid #FEE9D7;
+}
+
 .certificates__button:active{
   transform: scale(0.98);
+  box-shadow: inset 0px -4px 4px #D5B397;
 }

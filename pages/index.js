@@ -97,7 +97,7 @@ const newsTemplate = document
   .querySelector("#news-template")
   .content.querySelector(".last-news__news-box");
 
-const apiKey = "6a3a2f477c6343f18ce96d78fc1effc2";
+const apiKey = "2df70e35dd484c659c95676e4bb3f98c";
 
 const getNewsStories = () => {
   fetch("https://newsapi.org/v2/everything?q=covid", {
