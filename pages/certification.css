@@ -14,6 +14,7 @@
 @import url(../blocks/content/content.css);
 
 @import url(../blocks/hotline/hotline.css);
+@import url(../blocks/hotline/__container/hotline__container.css);
 @import url(../blocks/hotline/__title/hotline__title.css);
 @import url(../blocks/hotline/__workhours/hotline__workhours.css);
 @import url(../blocks/hotline/__box/hotline__box.css);
@@ -26,9 +27,21 @@
 @import url(../blocks/certificates/__box/certificates__box.css);
 @import url(../blocks/test-results/test-results.css);
 @import url(../blocks/test-results/__line/test-results__line.css);
+@import url(../blocks/test-results/__line-left/test-results__line-left.css);
+@import url(../blocks/test-results/__line-right/test-results__line-right.css);
+@import url(../blocks/test-results/__line-title/test-results__line-title.css);
+@import url(../blocks/test-results/__line-text/test-results__line-text.css);
+@import url(../blocks/test-results/__line-result-box/test-results__line-result-box.css);
+@import url(../blocks/test-results/__line-result-text/test-results__line-result-text.css);
+@import url(../blocks/test-results/__line-result-text/_negative/test-results__line-result-text_negative.css);
+@import url(../blocks/test-results/__line-result-img/test-results__line-result-img.css);
+@import url(../blocks/test-results/__line-date/test-results__line-date.css);
+@import url(../blocks/test-results/__line-textbox/test-results__line-textbox.css);
+@import url(../blocks/test-results/__line-textbox/_space/test-results__line-textbox_space.css);
 
 @import url(../blocks/vaccine/vaccine.css);
 @import url(../blocks/vaccine/__box/vaccine__box.css);
+@import url(../blocks/vaccine/__text/vaccine__text.css);
 
 @import url(../blocks/certificates/__button/certificates__button.css);
 @import url(../blocks/certificates/__button-text/certificates__button-text.css);

@@ -1,0 +1,8 @@
+.test-results__line-right{
+  margin: 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

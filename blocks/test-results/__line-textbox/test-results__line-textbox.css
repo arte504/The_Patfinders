@@ -1,0 +1,7 @@
+.test-results__line-textbox{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 45px;
+}

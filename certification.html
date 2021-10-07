@@ -43,11 +43,13 @@
 
   <main class="content">
     <container class="hotline">
-      <p class="hotline__title">Covid-19 hotline</p>
-      <p class="hotline__workhours">8:00 – 20:00 Uhr</p>
-      <div class="hotline__box">
-        <img class="hotline__icon" src="./images/phone.svg" alt="phone icon">
-        <p class="hotline__phone">030 9028 – 2828</p>
+      <div class="hotline__container">
+        <p class="hotline__title">Covid-19 hotline</p>
+        <p class="hotline__workhours">8:00 – 20:00 Uhr</p>
+        <div class="hotline__box">
+          <img class="hotline__icon" src="./images/phone.svg" alt="phone icon">
+          <p class="hotline__phone">030 9028 – 2828</p>
+        </div>
       </div>
     </container>
 
@@ -59,14 +61,16 @@
           <div class="test-results">
             <div class="test-results__line">
               <div class="test-results__line-left">
-                <img class="test-results__line-qr" src="./images/QR.svg" alt="Test QR code">
+                <img src="./images/QR.svg" alt="Test QR code">
               </div>
               <div class="test-results__line-right">
                 <p class="test-results__line-title">Result and sampling date</p>
                 <p class="test-results__line-text">Aleksander Woisjek</p>
                 <div class="test-results__line-result-box">
                   <p class="test-results__line-result-text test-results__line-result-text_negative">NEGATIV</p>
-                  <div class="test-results__line-result-img test-results__line-result-img_negative"></div>
+                  <div class="test-results__line-result-img test-results__line-result-img_negative">
+                    <img src="./images/checkmark.svg" alt="test checkmark">
+                  </div>
                 </div>
                 <p class="test-results__line-date">07.10.2021</p>
               </div>
@@ -75,8 +79,7 @@
               <div class="test-results__line-left">
                 <div class="test-results__line-textbox">
                   <p class="test-results__line-title">Expires at</p>
-                  <p class="test-results__line-text">08.10.2021</p>
-                  <p class="test-results__line-text">12:05 pm</p>
+                  <p class="test-results__line-text">08.10.2021 12:05 pm</p>
                 </div>
                 <div class="test-results__line-textbox">
                   <p class="test-results__line-title">Testing lab</p>
@@ -88,7 +91,7 @@
                   <p class="test-results__line-title">Test type</p>
                   <p class="test-results__line-text">Express</p>
                 </div>
-                <div class="test-results__line-textbox">
+                <div class="test-results__line-textbox test-results__line-textbox_space">
                   <p class="test-results__line-title">Test referes number</p>
                   <p class="test-results__line-text">xxxxxxxxxx</p>
                 </div>

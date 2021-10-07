@@ -1,0 +1,7 @@
+.test-results__line-result-box{
+  margin: 0;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

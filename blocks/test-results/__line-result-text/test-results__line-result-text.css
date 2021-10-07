@@ -1,0 +1,8 @@
+.test-results__line-result-text{
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  padding-right: 20px;
+  letter-spacing: 0.02em;
+}

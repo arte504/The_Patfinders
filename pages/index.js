@@ -72,9 +72,9 @@ getTotalCases();
 
 //  News section
 
-const newsTemplate = document.querySelector(".news-template");
-
-const newsSection = document.querySelector(".last-news__container-line");
+const newsTemplate = document
+  .querySelector("#news-template")
+  .content.querySelector(".last-news__news-box");
 
 const apiKey = "6a3a2f477c6343f18ce96d78fc1effc2";
 
@@ -92,20 +92,15 @@ const getNewsStories = () => {
       data.articles.forEach((item) => {
         // creates news card
         const createNewsCard = (item) => {
-          const newsCard = newsTemplate.content.cloneNode(true);
-
+          const newsCard = newsTemplate.cloneNode(true);
           const newsSource = newsCard.querySelector(".last-news__source-title");
-
           const newsTitle = newsCard.querySelector(".last-news__news-title");
-
           const newsDescription = newsCard.querySelector(
             ".last-news__news-paragraph"
           );
-
           const publicationDate = newsCard.querySelector(
             ".last-news__publication"
           );
-
           const additonalLink = newsCard.querySelector(".last-news__read-more");
 
           newsTitle.textContent = item.title;
