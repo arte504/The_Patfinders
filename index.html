@@ -8,8 +8,12 @@
   <link rel="stylesheet" href="./pages/index.css">
   <title></title>
   <meta name="author" content="The Pathfinders Team">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 </head>
 
 <body class="page">
@@ -51,16 +55,16 @@
           <div class="cities-panel__city_active_underline"></div>
         </li>
 
-        <li class="cities-panel__city" onclick="">
-          <a href="#" class="cities-panel__link">Moscow</a>
+        <li class="cities-panel__city">
+          <a href="#" class="cities-panel__link cities-panel__link_mscw" ">Moscow</a>
         </li>
 
-        <li class="cities-panel__city" onclick="">
-          <a href="#" class="cities-panel__link">Jerusalem</a>
+        <li class=" cities-panel__city">
+            <a href="#" class="cities-panel__link cities-panel__link_js">Jerusalem</a>
         </li>
 
-        <li class="cities-panel__city" onclick="">
-          <a href="#" class="cities-panel__link">London</a>
+        <li class="cities-panel__city">
+          <a href="#" class="cities-panel__link cities-panel__link_ldn">London</a>
         </li>
       </ul>
       <div class="add-city">
@@ -84,7 +88,9 @@
         </div>
 
         <div class="report">
-          <p class="report__title">Report from <script>document.write(new Date().toLocaleDateString('en-GB'));</script></p>
+          <p class="report__title">Report from
+            <script>document.write(new Date().toLocaleDateString('en-GB'));</script>
+          </p>
           <div class="report__box">
             <p class="report__text">Total cases</p>
             <p class="report__numbers report__numbers_total"></p>

@@ -1,8 +1,8 @@
-.cities-panel__city_active{
+.cities-panel__city_active {
   margin: 0;
   padding: 8px 8px 8px 0;
-  font-weight: bold;
-  font-size: 28px;
+  font-weight: 500;
+  font-size: 24px;
   line-height: 33px;
   width: 106px;
   height: 0;
