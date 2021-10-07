@@ -15,6 +15,7 @@
 @import url(../blocks/cities-panel/cities-panel.css);
 @import url(../blocks/cities-panel/__city/cities-panel__city.css);
 @import url(../blocks/cities-panel/__city/_active/cities-panel__city_active.css);
+@import url(../blocks/cities-panel/__city/_active/_underline/cities-panel__city_active_underline.css);
 @import url(../blocks/cities-panel/__link/cities-panel__link.css);
 @import url(../blocks/add-city/add-city.css);
 @import url(../blocks/add-city/__text/add-city__text.css);
