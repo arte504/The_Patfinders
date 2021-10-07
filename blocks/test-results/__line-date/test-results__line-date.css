@@ -1,0 +1,9 @@
+.test-results__line-date{
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+  color: #020202;
+  padding-top: 12px;
+}

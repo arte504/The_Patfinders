@@ -1,0 +1,7 @@
+.test-results__line-left{
+  margin: 0 25px 0 0;
+  width: 173px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
