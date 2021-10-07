@@ -40,6 +40,7 @@
 
 @import url(../blocks/vaccine/vaccine.css);
 @import url(../blocks/vaccine/__box/vaccine__box.css);
+@import url(../blocks/vaccine/__text/vaccine__text.css);
 
 @import url(../blocks/certificates/__button/certificates__button.css);
 @import url(../blocks/certificates/__button-text/certificates__button-text.css);

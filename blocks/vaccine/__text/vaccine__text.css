@@ -1,0 +1,10 @@
+.vaccine__text{
+  margin: 0;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #726060;
+}
