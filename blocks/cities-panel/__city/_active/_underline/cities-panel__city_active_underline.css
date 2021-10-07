@@ -1,0 +1,8 @@
+.cities-panel__city_active_underline{
+  margin: 0 0 0 10px;
+  width: 82px;
+  height: 2px;
+  background: #F9BF8F;
+  border-radius: 1px;
+  align-self: stretch;
+}

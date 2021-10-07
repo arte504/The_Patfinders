@@ -1,8 +1,9 @@
 .add-city__text{
   margin: 0;
   width: 118px;
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
   padding: 8px 12px 8px 12px;
   text-align: right;
   letter-spacing: 0.02em;
