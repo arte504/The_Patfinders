@@ -1,9 +1,11 @@
 .header__menu{
   margin: 0;
-  width: 100%;
+  width: 695px;
+  height: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
+  align-items: center;
   list-style: none;
-  padding: 50px 0 50px 0;
+  padding: 19px 165px 21px 0;
 }
