@@ -5,4 +5,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: -2px 0px 15px #B7B6B4;
 }
