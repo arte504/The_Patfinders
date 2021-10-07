@@ -1,0 +1,9 @@
+.certificates{
+  margin: 0;
+  width: 1110px;
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 165px;
+  padding-bottom: 40px;
+}

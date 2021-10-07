@@ -1,0 +1,8 @@
+.certificates__container{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 1110px;
+  height: auto;
+}

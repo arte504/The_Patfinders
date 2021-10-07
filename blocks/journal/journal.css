@@ -1,0 +1,9 @@
+.journal{
+  margin: 0;
+  padding: 73px 0 223px 165px;
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

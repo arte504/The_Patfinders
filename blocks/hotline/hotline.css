@@ -1,0 +1,11 @@
+.hotline{
+  margin: 48px 165px 0 0;
+  width: 350px;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: end;
+  background: #E8D4D0;
+  border-radius: 12px;
+}

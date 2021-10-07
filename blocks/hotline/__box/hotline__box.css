@@ -1,0 +1,9 @@
+.hotline__box{
+  margin: 0;
+  height: auto;
+  width: auto;
+  padding: 12px 0 12px 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
