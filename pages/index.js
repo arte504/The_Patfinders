@@ -56,9 +56,12 @@ const getTotalCasesGermany = () => {
       return res.json();
     })
     .then((data) => {
-      totalCases.textContent = data.cases;
-      recoveredCases.textContent = data.recovered;
-      deaths.textContent = data.deaths;
+      var cases = data.cases + "" + "(+" + data.todayCases + ")";
+      totalCases.textContent = separator(cases.toString());
+      var recoverd = data.recovered + "" + "(+" + data.todayRecovered + ")";
+      recoveredCases.textContent = separator(recoverd.toString());
+      var death = data.deaths + "" + "(+" + data.todayDeaths + ")";
+      deaths.textContent = separator(death.toString());
     })
     .catch((err) => {
       console.log("Error, Request failed");
@@ -72,9 +75,12 @@ const getTotalCasesRussia = () => {
       return res.json();
     })
     .then((data) => {
-      totalCases.textContent = data.cases;
-      recoveredCases.textContent = data.recovered;
-      deaths.textContent = data.deaths;
+      var cases = data.cases + "" + "(+" + data.todayCases + ")";
+      totalCases.textContent = separator(cases.toString());
+      var recoverd = data.recovered + "" + "(+" + data.todayRecovered + ")";
+      recoveredCases.textContent = separator(recoverd.toString());
+      var death = data.deaths + "" + "(+" + data.todayDeaths + ")";
+      deaths.textContent = separator(death.toString());
     })
     .catch((err) => {
       console.log("Error, Request failed");
@@ -87,9 +93,12 @@ const getTotalCasesBritain = () => {
       return res.json();
     })
     .then((data) => {
-      totalCases.textContent = data.cases;
-      recoveredCases.textContent = data.recovered;
-      deaths.textContent = data.deaths;
+      var cases = data.cases + "" + "(+" + data.todayCases + ")";
+      totalCases.textContent = separator(cases.toString());
+      var recoverd = data.recovered + "" + "(+" + data.todayRecovered + ")";
+      recoveredCases.textContent = separator(recoverd.toString());
+      var death = data.deaths + "" + "(+" + data.todayDeaths + ")";
+      deaths.textContent = separator(death.toString());
     })
     .catch((err) => {
       console.log("Error, Request failed");
@@ -102,9 +111,12 @@ const getTotalCasesIsrael = () => {
       return res.json();
     })
     .then((data) => {
-      totalCases.textContent = data.cases;
-      recoveredCases.textContent = data.recovered;
-      deaths.textContent = data.deaths;
+      var cases = data.cases + "" + "(+" + data.todayCases + ")";
+      totalCases.textContent = separator(cases.toString());
+      var recoverd = data.recovered + "" + "(+" + data.todayRecovered + ")";
+      recoveredCases.textContent = separator(recoverd.toString());
+      var death = data.deaths + "" + "(+" + data.todayDeaths + ")";
+      deaths.textContent = separator(death.toString());
     })
     .catch((err) => {
       console.log("Error, Request failed");
@@ -131,13 +143,31 @@ jerusalem.addEventListener("click", () => {
   getTotalCasesIsrael();
 });
 
+function separator(numb) {
+  var str = numb.toString().split(".");
+  str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  return str.join(".");
+}
+
+// stat class functions
+
+function totalColor() {
+  var total = document.getElementById("total");
+  total.classList.toggle("report__color-red");
+}
+
+function recoverdColor() {
+  var total = document.getElementById("recoverd");
+  total.classList.toggle("report__color-green");
+}
+
 //  News section
 
 const newsTemplate = document
   .querySelector("#news-template")
   .content.querySelector(".last-news__news-box");
 
-const apiKey = "6a3a2f477c6343f18ce96d78fc1effc2";
+const apiKey = "2df70e35dd484c659c95676e4bb3f98c";
 
 const getNewsStories = () => {
   fetch("https://newsapi.org/v2/everything?q=covid", {
