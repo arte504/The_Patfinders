@@ -26,6 +26,8 @@ const cityCoordinates = [
   },
 ];
 
+const berlin = document.querySelector(".cities-panel__link_ber");
+
 const moscow = document.querySelector(".cities-panel__link_mscw");
 
 const london = document.querySelector(".cities-panel__link_ldn");
@@ -34,14 +36,10 @@ const jerusalem = document.querySelector(".cities-panel__link_js");
 
 const city = document.querySelector(".cities-panel__city");
 
-const changeLocation = () => {
-  mapView.setView([55.751, 37.618], 10);
-};
+city.addEventListener("click", () => {
+  city.classList.remove("cities-panel__city_active");
 
-moscow.addEventListener("click", () => {
-  changeLocation();
-
-  city.classList.toggle("cities-panel__city_active");
+  city.classList.add("cities-panel__city_active");
 });
 
 // covid-19 stats
@@ -52,13 +50,28 @@ const recoveredCases = document.querySelector(".report__numbers_recovered");
 
 const deaths = document.querySelector(".report__numbers_death");
 
-const getTotalCases = () => {
+const getTotalCasesGermany = () => {
   fetch("https://disease.sh/v3/covid-19/countries/Germany?strict=true")
     .then((res) => {
       return res.json();
     })
     .then((data) => {
-      //console.log(data);
+      totalCases.textContent = data.cases;
+      recoveredCases.textContent = data.recovered;
+      deaths.textContent = data.deaths;
+    })
+    .catch((err) => {
+      console.log("Error, Request failed");
+    });
+};
+getTotalCasesGermany();
+
+const getTotalCasesRussia = () => {
+  fetch("https://disease.sh/v3/covid-19/countries/russia?strict=true")
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
       totalCases.textContent = data.cases;
       recoveredCases.textContent = data.recovered;
       deaths.textContent = data.deaths;
@@ -68,7 +81,55 @@ const getTotalCases = () => {
     });
 };
 
-getTotalCases();
+const getTotalCasesBritain = () => {
+  fetch("https://disease.sh/v3/covid-19/countries/uk?strict=true")
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      totalCases.textContent = data.cases;
+      recoveredCases.textContent = data.recovered;
+      deaths.textContent = data.deaths;
+    })
+    .catch((err) => {
+      console.log("Error, Request failed");
+    });
+};
+
+const getTotalCasesIsrael = () => {
+  fetch("https://disease.sh/v3/covid-19/countries/israel?strict=true")
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      totalCases.textContent = data.cases;
+      recoveredCases.textContent = data.recovered;
+      deaths.textContent = data.deaths;
+    })
+    .catch((err) => {
+      console.log("Error, Request failed");
+    });
+};
+// event listeners
+moscow.addEventListener("click", () => {
+  mapView.setView([55.751, 37.618], 10);
+  getTotalCasesRussia();
+});
+
+berlin.addEventListener("click", () => {
+  mapView.setView([52.52, 13.404], 10);
+  getTotalCasesGermany();
+});
+
+london.addEventListener("click", () => {
+  mapView.setView([51.505, -0.09], 10);
+  getTotalCasesBritain();
+});
+
+jerusalem.addEventListener("click", () => {
+  mapView.setView([31.771, 35.217], 10);
+  getTotalCasesIsrael();
+});
 
 //  News section
 

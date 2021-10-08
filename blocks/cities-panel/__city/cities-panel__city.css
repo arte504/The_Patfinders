@@ -1,7 +1,10 @@
-.cities-panel__city{
-  margin: 0;
-  padding: 14.5px 18px 14.5px 18px;
-  font-size: 16px;
+.cities-panel__city {
+  margin-right: 40px;
+  font-size: 20px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.cities-panel__city:last-child {
+  margin-right: 0;
 }

@@ -1,9 +1,6 @@
 .cities-panel__city_active {
-  margin: 0;
-  padding: 8px 8px 8px 0;
   font-weight: 500;
   font-size: 24px;
-  line-height: 33px;
-  width: 106px;
-  height: 0;
+  line-height: 20px;
+  border-bottom: 1px solid #f9bf8f;
 }
